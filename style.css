@@ -90,11 +90,17 @@ body * {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 ul {
   list-style: none;
 
   display: flex;
+  flex: 1;
+  max-width: 700px;
   flex-direction: column;
   gap: 16px;
 
@@ -147,10 +153,13 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
+  text-decoration: underline;
+  transition: text-decolation 0.2s;
 }
 
 footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+  text-decoration: none;
 }
